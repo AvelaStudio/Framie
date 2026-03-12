@@ -7,7 +7,7 @@ export default defineConfig({
         test: {
           name: "@framie/core",
           include: ["packages/core/src/**/*.test.ts"],
-          environment: "node",
+          environment: "jsdom",
         },
       }),
       defineProject({
