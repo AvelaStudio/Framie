@@ -29,6 +29,8 @@
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --clean",
     "dev": "tsup src/index.tsx --format esm,cjs --dts --watch",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
   }
 }
