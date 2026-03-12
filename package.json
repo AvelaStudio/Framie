@@ -1,0 +1,31 @@
+{
+  "name": "framie",
+  "version": "0.1.0",
+  "description": "Framie monorepo: iframe widget SDK with core, react, and peer packages.",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "clean": "rm -rf packages/*/dist",
+    "typecheck": "npm run typecheck --workspaces",
+    "dev": "npm run dev --workspace @framie/core",
+    "test": "echo \"No tests yet\""
+  },
+  "keywords": [
+    "iframe",
+    "widget",
+    "sdk",
+    "react"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
+  }
+}
